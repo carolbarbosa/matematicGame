@@ -8,9 +8,12 @@ personagem_nome = 'balu'
 personagem_coracao_maximo = 10
 personagem_coracao_inicial = 3
 personagem_coracao_momento = personagem_coracao_inicial
+cor = 255, 255, 0
 
 while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
+    tela.fill(cor)
+
 
 

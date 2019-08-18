@@ -2,6 +2,7 @@
 
 import sys, pygame
 pygame.init()
+pygame.display.set_caption('Mundo da Matemática')
 
 personagem_nome = 'balu'
 personagem_coracao_maximo = 10

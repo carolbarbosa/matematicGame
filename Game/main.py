@@ -8,6 +8,7 @@ personagem_nome = 'balu'
 personagem_coracao_maximo = 10
 personagem_coracao_inicial = 3
 personagem_coracao_momento = personagem_coracao_inicial
+imagemFundo = pygame.image.load('personagens/heroi/imagemFundo.png')
 personagem_avatar = pygame.image.load('personagens/heroi/h1.png')
 personagem_posicao = personagem_avatar.get_rect()
 
@@ -43,6 +44,7 @@ while 1:
 
    
     tela.fill(cor)
+    tela.blit(imagemFundo,(0,0))
     tela.blit(personagem_avatar, personagem_posicao)
     relogio.tick(27)
     pygame.display.flip()

@@ -1,4 +1,3 @@
-#sprint open source 0x72.itch.io/dungeontileset-ii (local onde peguei os personagens)
 
 import sys, pygame
 pygame.init()
@@ -8,7 +7,7 @@ personagem_nome = 'balu'
 personagem_coracao_maximo = 10
 personagem_coracao_inicial = 3
 personagem_coracao_momento = personagem_coracao_inicial
-imagemFundo = pygame.image.load('personagens/heroi/imagemFundo.png')
+imagemFundo = pygame.image.load('personagens/heroi/fundo1.png')
 personagem_avatar = pygame.image.load('personagens/heroi/h1.png')
 personagem_posicao = personagem_avatar.get_rect()
 coracao = pygame.image.load('personagens/heroi/coraçao.png')
@@ -17,12 +16,10 @@ coracao = pygame.image.load('personagens/heroi/coraçao.png')
 coracao = pygame.image.load('personagens/heroi/coraçao.png')
 
 
-
 tamanho = width, height = 800, 600
 cor = 255, 255, 0
 tela = pygame.display.set_mode(tamanho)
 relogio = pygame.time.Clock()
-
 
 while 1:
     for event in pygame.event.get():
@@ -45,11 +42,9 @@ while 1:
         if event.key == pygame.K_SPACE:
             personagem_posicao.move_ip(10,10)
             
-
         if event.key == pygame.K_BACKSPACE:
             personagem_posicao.move_ip(-10,-10)
 
-   
     tela.fill(cor)
     tela.blit(imagemFundo,(0,0))
     tela.blit(personagem_avatar, personagem_posicao)
@@ -65,4 +60,7 @@ while 1:
 pygame.quit()
         
     
+
+
+
 
